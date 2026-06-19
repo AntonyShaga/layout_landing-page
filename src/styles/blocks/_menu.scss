@@ -3,6 +3,8 @@
   z-index: 10;
   inset: 0;
 
+  overflow: auto;
+
   padding-block: 29px;
 
   @include page-padding-inline;
@@ -18,11 +20,17 @@
   }
 
   &__top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     margin-bottom: 44px;
+
+    background-color: $menu-bg-color;
   }
 
   &__nav {
@@ -54,4 +62,8 @@
 
     border-bottom: 1px solid $black-color;
   }
+}
+
+body:has(.menu:target) {
+  overflow: hidden;
 }

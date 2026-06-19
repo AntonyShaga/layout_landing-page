@@ -8,7 +8,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="src/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="src/images/logo-white.svg" type="image/svg+xml">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -120,12 +120,13 @@
 
       <div class="compare__products">
         <article class="bike-card">
-          <img
-            src="src/images/bike-sporty-4.png"
-            alt="Sporty 4 bike"
-            class="bike-card__image"
-          >
-
+          <a href="#">
+            <img
+              src="src/images/bike-sporty-4.png"
+              alt="Sporty 4 bike"
+              class="bike-card__image"
+            >
+          </a>
           <h3 class="bike-card__title">
             Sporty 4
           </h3>
@@ -141,11 +142,13 @@
         </article>
 
         <article class="bike-card">
-          <img
-            src="src/images/bike-ride-in-town.png"
-            alt="Ride in town ST bike"
-            class="bike-card__image"
-          >
+          <a href="#">
+            <img
+              src="src/images/bike-ride-in-town.png"
+              alt="Ride in town ST bike"
+              class="bike-card__image"
+            >
+          </a>
 
           <h3 class="bike-card__title">
             Ride in town ST
@@ -162,11 +165,13 @@
         </article>
 
         <article class="bike-card">
-          <img
-            src="src/images/bike-agile-ride-3.png"
-            alt="Agile ride 3 bike"
-            class="bike-card__image"
-          >
+          <a href="#">
+            <img
+              src="src/images/bike-agile-ride-3.png"
+              alt="Agile ride 3 bike"
+              class="bike-card__image"
+            >
+          </a>
 
           <h3 class="bike-card__title">
             Agile ride 3
@@ -194,17 +199,21 @@
           <div class="details__cards">
             <article class="detail-card">
               <div class="detail-card__photos">
-                <img
-                  src="src/images/details-auto-unlock-1.png"
-                  alt="Bike handlebar with phone"
-                  class="detail-card__photo detail-card__photo--wide"
-                >
+                <a href="#" class="detail-card__link detail-card__link--wide">
+                  <img
+                    src="src/images/details-auto-unlock-1.png"
+                    alt="Bike handlebar with phone"
+                    class="detail-card__photo"
+                  >
+                </a>
 
-                <img
-                  src="src/images/details-auto-unlock-2.png"
-                  alt="Bike brake handle"
-                  class="detail-card__photo detail-card__photo--small"
-                >
+                <a href="#" class="detail-card__link detail-card__link--small">
+                  <img
+                    src="src/images/details-auto-unlock-2.png"
+                    alt="Bike brake handle"
+                    class="detail-card__photo"
+                  >
+                </a>
               </div>
 
               <h3 class="detail-card__title">
@@ -219,17 +228,21 @@
 
             <article class="detail-card">
               <div class="detail-card__photos">
-                <img
-                  src="src/images/details-range-1.png"
-                  alt="Bike with integrated lights"
-                  class="detail-card__photo detail-card__photo--wide"
-                >
+                <a href="#" class="detail-card__link detail-card__link--wide">
+                  <img
+                    src="src/images/details-range-1.png"
+                    alt="Bike with integrated lights"
+                    class="detail-card__photo"
+                  >
+                </a>
 
-                <img
-                  src="src/images/details-range-2.png"
-                  alt="Bike front light"
-                  class="detail-card__photo detail-card__photo--small"
-                >
+                <a href="#" class="detail-card__link detail-card__link--small">
+                  <img
+                    src="src/images/details-range-2.png"
+                    alt="Bike front light"
+                    class="detail-card__photo"
+                  >
+                </a>
               </div>
 
               <h3 class="detail-card__title">
@@ -245,17 +258,21 @@
 
             <article class="detail-card">
               <div class="detail-card__photos">
-                <img
-                  src="src/images/details-brakes-1.png"
-                  alt="Bike hydraulic disc brake"
-                  class="detail-card__photo detail-card__photo--small"
-                >
+                <a href="#" class="detail-card__link detail-card__link--small">
+                  <img
+                    src="src/images/details-brakes-1.png"
+                    alt="Bike hydraulic disc brake"
+                    class="detail-card__photo"
+                  >
+                </a>
 
-                <img
-                  src="src/images/details-brakes-2.png"
-                  alt="Bike rear wheel and kickstand"
-                  class="detail-card__photo detail-card__photo--wide"
-                >
+                <a href="#" class="detail-card__link detail-card__link--wide">
+                  <img
+                    src="src/images/details-brakes-2.png"
+                    alt="Bike rear wheel and kickstand"
+                    class="detail-card__photo"
+                  >
+                </a>
               </div>
 
               <h3 class="detail-card__title">
@@ -288,25 +305,29 @@
               action="#"
               method="post"
               class="contacts__form contact-form"
+              onsubmit="this.reset(); return false;"
             >
               <input
                 type="text"
                 name="name"
-                placeholder="Name"
+                placeholder="Name, e.g. Alex Smith"
                 class="contact-form__field"
+                required
               >
 
               <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder="Email, e.g. alex@gmail.com"
                 class="contact-form__field"
+                required
               >
 
               <textarea
                 name="message"
-                placeholder="Message"
+                placeholder="Message, e.g. I want to book a test ride"
                 class="contact-form__field contact-form__field--textarea"
+                required
               ></textarea>
 
               <button
